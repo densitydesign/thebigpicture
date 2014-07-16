@@ -551,6 +551,14 @@ width: 180px;
 
 
 																/* exploration */
+.introexplo {
+    padding-top: 30px;
+   
+}
+#spaceexplo {
+    min-height: 150px;
+}
+
 .exploration {
     background-color: #d7f9r4 ;
     min-height: 1000px;
