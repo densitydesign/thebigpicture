@@ -442,7 +442,8 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                 else return langsArr.indexOf(e.lang) >= 0
             })
                 .sort(function (a, b) {
-                    return b[sortby] - a[sortby]
+                    if (sortby==="rank") return a[sortby] - b[sortby]
+                    else return b[sortby] - a[sortby]
                 })
 
 
