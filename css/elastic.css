@@ -1,7 +1,7 @@
 /* Google Images */
 .viz_googleimages text {
     font: 1em sans-serif;
-    font-family: 'Montserrat';
+    font-family: 'Open Sans', sans-serif;
     text-transform: capitalize;
 }
 
@@ -325,6 +325,12 @@ width:15%;
     padding-left:1%;
 }
 
-.progress-lbl h3{
-    font-size:0.9em;
+.progress-lbl h6{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #404040;
+    font-weight: 400;
+    font-size:0.8em;
+    text-align: center;
+    letter-spacing:10px;
 }
