@@ -209,7 +209,7 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                     return langScale(d.count)
                 })
                 .style("fill", function (d) {
-                    return "#dddddd";
+                    return "#F0F0F0";
                 })
                 .style("stroke", "#fff")
                 .on("click", function (d) {
@@ -340,7 +340,7 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                     return e.h
                 })
                 .style("fill", function (e) {
-                    return "#dddddd";
+                    return "#F0F0F0";
                 })
                 .style("stroke", "#fff")
                 .on("click", function (d) {
