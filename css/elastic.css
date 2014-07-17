@@ -74,14 +74,14 @@
 .googleimages .labels{
     margin-top:0px;
 }
-
+/* titoli*/
 .googleimages .labels h3,.googleimages .list-labels h3{
     font-variant:small-caps;
-    font-size:1em;
-    color:#222;
+    font-size:0.9em;
+    color:#404040;
     text-align:left;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0px;
     font-weight: 700;
 
 }
@@ -136,7 +136,7 @@ width:15%;
 
 .viz_googleimages text {
     font: 11px sans-serif;
-    font-family: 'Montserrat';
+    font-family: 'Open Sans', sans-serif;
     text-transform: capitalize;
 }
 
@@ -242,7 +242,7 @@ width:15%;
 
 /*Single Buttons*/
 #custom .btn {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -259,7 +259,7 @@ width:15%;
 }
 
 .btn, .btn:hover{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     letter-spacing: 1px;
 }
 
@@ -280,6 +280,12 @@ width:15%;
 .img-filters{
     float:left;
     width:15% !important;
+    background-color: #F0F0F0;
+    margin-top: 50px;
+    padding: 0px 20px 20px 20px; 
+}
+.img-filters h3{
+    padding-top: 0px !important;
 }
 
 .controllers{
@@ -290,8 +296,14 @@ width:15%;
     color: #43BBD0;
     font-weight:bold;
 }
+/* menù ordinamento*/
 .sort{
     cursor:pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+
+
 }
 .googleimages{
     opacity:0;
@@ -323,6 +335,7 @@ width:15%;
 }
 .cmd-labels h3{
     padding-left:1%;
+    font-family: 'Open Sans', sans-serif; 
 }
 
 .progress-lbl h6{
