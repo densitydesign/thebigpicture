@@ -140,27 +140,33 @@ html {
 	Padding-top: 120px;
 	padding-bottom: 0px;
 	text-align: center;
+	text-transform: uppercase;
 
 	
 }
-.images .container h4 {
+.images .content h4 {
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	color: #404040;
 	font-weight:400;
 	font-size: 14px;
+	line-height: 15px;
 	text-transform:uppercase;
 	text-align: center;
+
 }
+.images .container hr {
+border-top: 1px solid #909090;
+width: 100%;
+margin-top: 2px;
+}
+
 .images hr {
 border-top: 1px solid #909090;
 width: 180px;
 /*width: 85%;*/
 }
-.images .container hr {
-border-top: 1px solid #909090;
-width: 100%;
-}
+
 .images {
       min-height: 2600px;
       background-color:#FFFFFF;
@@ -184,10 +190,10 @@ bottom:0px;
 }
 
 .images .carousel-caption {
-color: #000000 ;
+color: #404040 ;
 font-family: 'Open Sans', sans-serif;
-font-weight: 300 ; 
-font-size: 15px;
+font-weight: 400 ; 
+font-size: 14px;
 text-shadow: none;
 top:-15px;
 line-height: 20px;
@@ -506,23 +512,21 @@ a.collegamento:active{
 }
 
 .middle .container {
-	font-family: 'Open Sans', sans-serif;
 	text-align:left;
 	padding-top:20px;
     background-color: #ffffff ;
     min-height: 900px;
     padding-bottom: 50px;
     line-height: 26px;
-
-
 }
-#abstract {
+#abstract p{
+	font-family: 'Open Sans', sans-serif;
+	color: #404040;
 	font-weight: 400;
-	font-size: 16px; 
-	padding-top: 50px;
-	line-height: 28px; 
+	font-size: 15px;
+	line-height: 27px;
+}
 
-}	
 .middle .container h4 {
 	font-family: 'Open Sans', sans-serif;
     text-align:center;
@@ -550,8 +554,8 @@ border-top: 1px solid #909090;
 width: 180px;
 /*width: 85%;*/
 }
-.middle .container .col-md-8 {
-	Padding-top: 15px;
+.middle .container .col-md-6 {
+	Padding-top: 35px;
 }
 
 
