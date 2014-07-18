@@ -147,8 +147,8 @@ html {
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	color: #404040;
-	font-weight:700;
-	font-size: 13px;
+	font-weight:400;
+	font-size: 14px;
 	text-transform:uppercase;
 	text-align: center;
 }
@@ -186,8 +186,8 @@ bottom:0px;
 .images .carousel-caption {
 color: #000000 ;
 font-family: 'Open Sans', sans-serif;
-font-weight: 800;
-font-size: 14px;
+font-weight: 300 ; 
+font-size: 15px;
 text-shadow: none;
 top:-15px;
 line-height: 20px;
@@ -247,7 +247,7 @@ text-align: center;
 }
 
 .images .content {
-	padding-top: 30px;
+	padding-top: 10px;
 	
 }
 			
@@ -407,13 +407,13 @@ padding-top: 60px;
 	letter-spacing:5px;
 } 
 .sources h5{
-	color: #43BBD0;
-	Padding-top: 27px;
-	font-size: 20px;
-	line-height: 38px;
+	color: #404040;
+	padding-top: 27px;
+	font-size: 18px;
+	line-height: 22px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 800;
-	letter-spacing:-1px;
+
 } 
 .sources h6{
 	color: #404040;
@@ -421,8 +421,8 @@ padding-top: 60px;
 	line-height: 10px;
 	padding-top: 7px;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	text-transform:uppercase;
+	font-weight: 700;
+	
 } 
 .sources p{
 	color: #404040;
@@ -432,6 +432,11 @@ padding-top: 60px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
+.sources .news hr {
+	width: 100%;
+	margin-left: 0;;
+}
+
 p.intro{
 	font-size: 24px;
 	line-height: 35px;
@@ -556,7 +561,7 @@ width: 180px;
    
 }
 #spaceexplo {
-    min-height: 150px;
+    min-height: 100px;
 }
 
 .exploration {
@@ -581,6 +586,12 @@ width: 180px;
 	font-weight: 800;
 	letter-spacing:5px;
 }
+.exploration .col-md-5 .intro{
+    margin-left: 20px ;
+}
+/*.exploration .howto {
+
+}*/
 																/* FFFFINDINGS  */
 .findings {
     background-color: #d7f9r4 ;
