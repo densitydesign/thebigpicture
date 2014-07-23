@@ -1,3 +1,4 @@
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700,800);
 
 
@@ -46,30 +47,37 @@ p {
 }
 html {
     background-color: #474747;
-}																				/*Menu'*/
+}	
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+																			/*Menu'*/
+/*da modificare per font menù*/
 .nav-justified li a {
-
-    color: #FFFFFF;
+	letter-spacing: 1px;
+    color: #c1e8ef;
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    font-size: 0.9em;
+    font-weight: 400;
+    font-size: 0.85em;
     text-transform:uppercase;
     padding-top: 16px;
 }
 .nav-justified li a:hover {
 	color: #ffffff;
-	font-weight:700;
-	background-color: #43BBD0; !important
+	font-weight:400;
+		background: none; 
 }
 .nav-justified li a:active {
 	color: #ffffff;
 	font-weight:700;
-	background-color: #43BBD0; !important
+		background: none; 
 }
 .nav-justified li a:visited {
 	color: #ffffff;
 	font-weight:300;
-	background-color: #43BBD0; !important
+	background: none; 
 }
 .top {
     background-color: #43BBD0;
@@ -763,7 +771,9 @@ margin-top: 58px;
 margin-bottom: 40px;
 }
 
-
+.banner #startexplo {
+	padding-top: 20px;
+}
 
 
 .button a {
@@ -795,15 +805,13 @@ margin-bottom: 40px;
 	 text-decoration: none;
 	 background: #43BBD0;
 	 color: #ffffff;
-
-
-
 }
 
- 
-/*Pulls in Wings*/
-.button:active .downinfo {
-  margin: -20px 0 0 10px;
+
+.button a:hover {
+	
+	 text-decoration: none;
+
 }
 
 .bottom {
@@ -841,35 +849,31 @@ font-family: 'Open Sans', sans-serif;
     color: #FFFFFF;
     font-weight: 400;
     font-size: 12px;
-    padding-top: 5px; 
-    line-height: 18px;
+    padding-top: 10px; 
+    line-height: 19px;
     letter-spacing: 1px;
     text-transform: none;
+     padding-bottom: 50px;
  } 
- .bottom .col-md-4 {
-     padding-bottom: 100px;
+
+
+a#projectby {
+    color: #2b9aad;
+	font-weight:400;
+    font-size: 12px;
 } 
 
- .bottom .container .collegamento {
-
-    color: #43BBD0;
-    font-weight: 600;
-    text-transform: none;
+a#projectby:visited{
+    color: #2b9aad;
 } 
- .bottom .container .collegamento:hover {
-
-    color: #16dbfd;
+a#projectby:hover{
+    color: #28ceeb;
+    font-weight:600;
     text-decoration: none;
-    text-transform: none;
-    } 
-
-    #projectby {
-    	color: FFFFFF;
-	text-transform:uppercase;
-	font-weight:600;
-	letter-spacing:1px;
-    font-size: 11px;
-
+} 
+a#projectby:active{
+    color: #53c1d4;
+    text-decoration: none;
 } 
 
 .share {
