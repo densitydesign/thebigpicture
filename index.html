@@ -27,7 +27,7 @@
   <!-- Site header and navigation -->
   <header class="top" role="banner">
     <div class="container">
-      <a href="#home" class="navbar-brand pull-left smooth">The Big Picture</a>
+      <a href="#home" class="navbar-brand pull-left smooth" id="smallbrand">The Big Picture</a>
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="glyphicon glyphicon-align-justify"></span>
       </button>
@@ -105,7 +105,7 @@
             <div class="howto col-md-6">
               <div>
                 <h6 class="howto"> How to read </h6>
-                <p class="howto"> ImageMontage and ImageSlices are composition made out of images or portion of the images, organized according to their visual features (Hue, Saturation, Brightness). ImageSlices allow to quickly <b>identify the points of continuity and discontinuity</b> between the visual features of the two datasets, while selective ImageMontages allow to quantify the differences according to each steps of the value.</p>
+                <p class="howto"> ImageMontage and ImageSlices are composition made out of images or portion of the images, organized according to their visual features (<a href="http://en.wikipedia.org/wiki/Hue" target="_blank">Hue</a>, <a href="http://en.wikipedia.org/wiki/Saturation_(color_theory)" target="_blank">Saturation</a>, <a href="http://en.wikipedia.org/wiki/Brightness" target="_blank">Brightness</a>). ImageSlices allow to quickly <b>identify the points of continuity and discontinuity</b> between the visual features of the two datasets, while selective ImageMontages allow to quantify the differences according to each steps of the value.</p>
               </div>
             </div>
           </div>
@@ -374,93 +374,18 @@
   <h3>exploration</h3>
   <hr>
 
-  <div class= "col-md-10 col-centered introexplo">
-    <div class="intro col-lg-5 col-lg-offset-1 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1"> 
-      <p class="intro">Try yourself to surf within the dataset,<br> you can explore the diverse features of the images in relation to their sources and categories! </p>
+  <div class= "col-md-10 col-centered ">
+    <div class="col-md-6 col-centered introexplo"> 
+      <p class="introexplo" >Try yourself to surf within the dataset,<br> you can explore the diverse features of the images in relation to their sources and categories! </p>
     </div>
-    <div class="howto col-lg-4 col-lg-offset-0 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2 col-xs-10 col-xs-offset-1">
-      <div>
-        <h6 class="howto"> How to use </h6>
-        <p class="howto"> You can use the instrument to sort and filter the images in order to navigate and compare the two datasets. Control the size The label represent a further univocal categorization given to the images in order to grasp the specific "personality" of each source. to grasp the specific "personality" of each source. </p>
-      </div>
+    <div class="col-md-12 button col-centered" id="gotoexplo">
+      <a class="smooth" href="#section1" target="_blank" >go to the explorer!</a>
     </div>
-  </div>
 
-  <div class="container col-md-12 col-sm-12 col-xs-12" id="spaceexplo">
-  </div>
-
-
-  <div class="progress-cont im-italy">
-      <div class="progress-lbl">
-          <h6>Loading images</h6>
-      </div>
-      <div class="progress">
-          <!--<h3>Loading images</h3>-->
-          <div class="progress-bar" role="progressbar"  style="width: 0%;">
+    <div class="col-md-8 col-centered image-wrapper">
+            <img src="explorer3.png" alt="explorer" class="scale-image" />
           </div>
-      </div>
   </div>
-
-  <div id ="ita-elastic" class="container-fluid im-italy googleimages">
-  <div class="row side-all">
-  <div class="col-md-12 col-sm-12 main-viz">
-      <div class="graph">
-          <div class="container controls" >
-              <div class="labels row">
-                  <div class="cmd-labels">
-                      <h3 class="size-lbl">size</h3>
-                      <h3 class="show-lbl">show</h3>
-                  </div>
-                  <!--<div class="list-labels">
-                      <h3>google language <span class="rem-langs glyphicon glyphicon-remove" style= "color:#02484C; font-size:0.5em" ></span></h3>
-                      <h3>category <span class="rem-tags glyphicon glyphicon-remove" style= "color:#02484C; font-size:0.5em" ></span></h3>
-                  </div>-->
-
-              </div>
-              <div class="viz_googleimages" class="row section-row" >
-              </div>
-          </div>
-      </div>
-      </div>
-     </div>
-
-  </div>
-
-
-
-  <div class="progress-cont im-china">
-      <div class="progress-lbl">
-          <h6>Loading images</h6>
-      </div>
-      <div class="progress">
-          <!--<h3>Loading images</h3>-->
-          <div class="progress-bar" role="progressbar"  style="width: 0%;">
-          </div>
-      </div>
-  </div>
-
-  <div id ="chi-elastic" class="container-fluid im-china googleimages">
-      <div class="row side-all">
-          <div class="col-md-12 col-sm-12 main-viz">
-              <div class="graph">
-                  <div class="container controls" >
-                      <div class="labels row">
-                          <div class="cmd-labels">
-                              <h3 class="size-lbl">size</h3>
-                              <h3 class="show-lbl">show</h3>
-                          </div>
-                          <!--<div class="list-labels">
-                              <h3>google language <span class="rem-langs glyphicon glyphicon-remove" style= "color:#02484C; font-size:0.5em" ></span></h3>
-                              <h3>category <span class="rem-tags glyphicon glyphicon-remove" style= "color:#02484C; font-size:0.5em" ></span></h3>
-                          </div>-->
-
-                      </div>
-                      <div class="viz_googleimages" class="row section-row" >
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
 
   </div>
 
@@ -479,11 +404,11 @@
     <div class="howto col-lg-4 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
       <div>
         <h6 class="howto"> How to read </h6>
-        <p class="howto"> The visualization shows a comparison between the amount of images related to each <b>keyword</b> and to each <b>label</b> for all the sources. The label represent a further univocal categorization given to the images in order to grasp the specific "personality" of each source. </p>
+        <p class="howto"> The visualization shows a comparison between the amount of images related to each <b>keyword</b> and to each <b>label</b> for all the sources. The label represent a further univocal categorization given to some of the images in order to grasp the specific "personality" of each source. </p>
       </div>
     </div>	
   </div>
-  <div class="container col-md-12 col-sm-12 col-xs-12" id="spaceexplo">
+  <div class="container col-md-12 col-sm-12 col-xs-12" id="spaziofonti">
   </div>
 
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -662,9 +587,7 @@ artefacts gives them the role of tools for the user. <br> <br> <b>While an outsi
 <!-- Include jQuery and bootstrap JS plugins -->
 <script src="jquery/jquery-2.1.0.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-  <script src="js/bootstrap-slider.js" charset="utf-8"></script>
-  <script src="js/elastic.js" charset="utf-8"></script>
+
 
 
 

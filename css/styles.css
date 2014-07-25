@@ -21,6 +21,8 @@
 h1, h2, h3, h4 {
     font-family: 'Open Sans', sans-serif;
 }
+
+
 h1 {
     color: #43BBD0;
     font-size: 5em;
@@ -58,7 +60,7 @@ img.center {
 .nav-justified li a {
 	letter-spacing: 1px;
     color: #c1e8ef;
-    font-family: 'Lato', sans-serif;
+    	font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 0.85em;
     text-transform:uppercase;
@@ -81,15 +83,17 @@ img.center {
 }
 .top {
     background-color: #43BBD0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     left: 0;
     position: fixed;
     right: 0;
     z-index: 1030;
 }
 .top .navbar-brand {
+	font-family: 'Open Sans', sans-serif;
+
     height: 50px;
-    font-weight:800;
+    font-weight:700;
     line-height: 50px;
     text-align: center;
     padding: 0 10px;
@@ -464,10 +468,29 @@ p.howto {
 	line-height: 18px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
-
-
 	padding-top: 0px;
 }
+
+.howto a:link{
+	font-weight: 600;
+	color: #237e8e;	
+} 
+
+.howto a:visited{
+	font-weight: 600;
+	color: #237e8e;	
+} 
+
+.howto a:hover{
+	font-weight: 600;
+	color: #43BBD0;	
+	text-decoration: none;
+} 
+.howto a:active{
+	font-weight: 600;
+	color: #43BBD0;	
+} 
+
 h6.howto {
 color: #404040;
 	font-size: 12px;
@@ -569,10 +592,16 @@ width: 180px;
 
 																/* exploration */
 .introexplo {
-    padding-top: 30px;
+	font-size: 24px;
+	line-height: 35px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
    
 }
-#spaceexplo {
+ #spaceexplo1, #spaceexplo2{
     min-height: 100px;
 }
 
@@ -581,6 +610,11 @@ width: 180px;
     min-height: 1000px;
     clear:both;
 }
+
+.exploration .col-centered img{
+    border: 0px solid #909090;
+}
+
 .exploration hr {
 border-top: 1px solid #909090;
 width: 180px;
@@ -598,8 +632,8 @@ width: 180px;
 	font-weight: 800;
 	letter-spacing:5px;
 }
-.exploration .col-md-5 .intro{
-    margin-left: 20px ;
+#spaziofonti {
+    min-height: 50px; 
 }
 /*.exploration .howto {
 
@@ -761,6 +795,52 @@ font-family: 'Open Sans', sans-serif;
     padding-top:35px;   
 }
 
+/* explorer  */ 
+.startquote hr {
+border-top: 1px solid #909090;
+width: 50px;
+
+}
+.startquote h2 {
+    font-style:normal;
+    font-family: 'Open Sans', sans-serif;
+    text-align:center;
+    color: #2b9aad;
+    font-size: 22px;
+    font-weight:700;
+    line-height:26px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+.startquote h4 {
+    font-style:normal;
+    font-family: 'Open Sans', sans-serif;
+    text-align:center;
+    color: #43BBD0;
+    font-size: 19px;
+    font-weight:300;
+    line-height:28px;
+        font-style: italic;
+    padding-top: 40px;
+
+}
+.startquote {
+    background-color: #ffffff;
+    /*border-bottom: 2px solid #43BBD0;*/
+}
+/* explorer */ 
+.startquote .quotes h6 {
+font-family: 'Open Sans', sans-serif;
+    color:  #909090 ;
+    text-align:center;
+    font-size: 12px;
+    font-weight:400;
+    line-height:20px;
+    padding-top:35px;   
+}
 .methods #download {
 -webkit-animation-duration: 0.7s;
 -webkit-animation-iteration-count: infinite;
@@ -773,6 +853,9 @@ margin-bottom: 40px;
 
 .banner #startexplo {
 	padding-top: 20px;
+}
+.exploration #gotoexplo {
+	padding-bottom:30px;
 }
 
 
@@ -946,6 +1029,6 @@ margin: 0 auto;
 
 /*sections ids*/
 
-#section1, #section2, #section3, #section4, #section5, #section6, #section6, #section7, #section8{
+#section1, #section2, #section3, #section4, #section5, #section6, #section6, #section7, #section8, #section9, #section10, #section11, #section12, #spaceexplo1, #spaceexplo2{
 	padding-top: 50px;
 }
