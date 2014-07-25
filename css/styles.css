@@ -402,7 +402,7 @@ padding-top: 50px;
 
 .sources {
     background-color: #FFFFFF ;
-	min-height: 2200px;
+	min-height: 2300px;
 }
 .sources hr {
 border-top: 1px solid #ebebeb;
@@ -648,7 +648,7 @@ margin-bottom: 50px;
 																/* FFFFINDINGS  */
 .findings {
     background-color: #d7f9r4 ;
-    min-height: 1100px; 
+    min-height: 1200px; 
 }
 .findings hr {
 border-top: 1px solid #ebebeb;
@@ -682,7 +682,7 @@ margin-bottom: 50px;
 .findings h3 {
    text-align: center;
 	color: #2b9aad;
-	Padding-top: 20px;
+	padding-top: 20px;
 	font-size: 29px;
 	line-height: 22px;
 	font-family: 'Open Sans', sans-serif;
@@ -852,7 +852,9 @@ font-family: 'Open Sans', sans-serif;
     line-height:20px;
     padding-top:35px;   
 }
-
+#spazio1 {
+   min-height: 100px;
+}
 .exploratory h3 {
 text-align: center;
 	color: #2b9aad;
@@ -862,7 +864,7 @@ text-align: center;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 4px;
-    padding-top: 60px;
+    padding-top: 30px;
 
 }
 
