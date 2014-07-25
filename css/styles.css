@@ -130,16 +130,16 @@ img.center {
 }
 
 .images h3 {
-   	text-align: center;
-	color: #43BBD0;
+text-align: center;
+	color: #2b9aad;
 	Padding-top: 20px;
-	font-size: 15px;
-	text-transform:uppercase;
-	/*font-size: 30px;*/
-	line-height: 0px;
+	font-size: 29px;
+	line-height: 22px;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	letter-spacing:5px;
+	/*font-variant:small-caps;
+	text-transform: uppercase;*/
+	font-weight: 700;
+	letter-spacing: 0px;
 }
 
 .images h5 {
@@ -174,9 +174,10 @@ margin-top: 2px;
 }
 
 .images hr {
-border-top: 1px solid #909090;
-width: 180px;
-/*width: 85%;*/
+border-top: 1px solid #ebebeb;
+width: 300px;
+margin-top: 20px;
+margin-bottom: 50px;
 }
 
 .images {
@@ -284,16 +285,16 @@ text-align: center;
 */
 }
 .keywords h3{
-		text-align: center;
-	color: #43BBD0;
+text-align: center;
+	color: #2b9aad;
 	Padding-top: 20px;
-	font-size: 15px;
-	text-transform:uppercase;
-	/*font-size: 30px;*/
-	line-height: 0px;
+	font-size: 29px;
+	line-height: 22px;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	letter-spacing:5px;
+	/*font-variant:small-caps;
+	text-transform: uppercase;*/
+	font-weight: 700;
+	letter-spacing: 0px;
 } 
 .keywords h5{
 	color: #404040;
@@ -325,9 +326,10 @@ text-align: center;
 background-color: #ffffff;
 }
 .keywords hr {
-border-top: 1px solid #909090;
-width: 180px;
-/*width: 85%;*/
+border-top: 1px solid #ebebeb;
+width: 250px;
+margin-top: 20px;
+margin-bottom: 50px;
 
 }
 .keywords .col-md-offset-4 {
@@ -403,9 +405,10 @@ padding-top: 50px;
 	min-height: 2200px;
 }
 .sources hr {
-border-top: 1px solid #909090;
-width: 180px;
-/*width: 85%;*/
+border-top: 1px solid #ebebeb;
+width: 450px;
+margin-top: 20px;
+margin-bottom: 50px;
 
 
 }
@@ -413,16 +416,18 @@ width: 180px;
 padding-top: 60px;
 }
 .sources h3{
-	text-align: center;
-	color: #43BBD0;
+text-align: center;
+	color: #2b9aad;
 	Padding-top: 20px;
-	font-size: 15px;
-	text-transform:uppercase;
-	/*font-size: 30px;*/
-	line-height: 0px;
+	font-size: 29px;
+	line-height: 22px;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	letter-spacing:5px;
+	/*font-variant:small-caps;
+	text-transform: uppercase;*/
+	font-weight: 700;
+	letter-spacing: 0px;
+
+
 } 
 .sources h5{
 	color: #404040;
@@ -569,21 +574,22 @@ a.collegamento:active{
     padding-top: 0px;
 }
 .middle h3 {
-   	 	text-align: center;
-	color: #43BBD0;
+text-align: center;
+	color: #2b9aad;
 	Padding-top: 20px;
-	font-size: 15px;
-	text-transform:uppercase;
-	/*font-size: 30px;*/
-	line-height: 0px;
+	font-size: 29px;
+	line-height: 22px;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	letter-spacing:5px;
+	/*font-variant:small-caps;
+	text-transform: uppercase;*/
+	font-weight: 700;
+	letter-spacing: 0px;
 }
 .middle hr {
-border-top: 1px solid #909090;
-width: 180px;
-/*width: 85%;*/
+border-top: 1px solid #ebebeb;
+width: 160px;
+margin-top: 20px;
+margin-bottom: 50px;
 }
 .middle .container .col-md-6 {
 	Padding-top: 35px;
@@ -616,21 +622,22 @@ width: 180px;
 }
 
 .exploration hr {
-border-top: 1px solid #909090;
-width: 180px;
-/*width: 85%;*/
+border-top: 1px solid #ebebeb;
+width: 280px;
+margin-top: 20px;
+margin-bottom: 50px;
 }
 .exploration h3 {
-   text-align: center;
-	color: #43BBD0;
+ text-align: center;
+	color: #2b9aad;
 	Padding-top: 20px;
-	font-size: 15px;
-	text-transform:uppercase;
-	/*font-size: 30px;*/
-	line-height: 0px;
+	font-size: 29px;
+	line-height: 22px;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	letter-spacing:5px;
+	/*font-variant:small-caps;
+	text-transform: uppercase;*/
+	font-weight: 700;
+	letter-spacing: 0px;
 }
 #spaziofonti {
     min-height: 50px; 
@@ -644,9 +651,10 @@ width: 180px;
     min-height: 1100px; 
 }
 .findings hr {
-border-top: 1px solid #909090;
-width: 180px;
-/*width: 85%;*/
+border-top: 1px solid #ebebeb;
+width: 220px;
+margin-top: 20px;
+margin-bottom: 50px;
 }
 
 .imgfind {
@@ -672,16 +680,16 @@ width: 180px;
 } 
 
 .findings h3 {
-     	 	text-align: center;
-	color: #43BBD0;
+   text-align: center;
+	color: #2b9aad;
 	Padding-top: 20px;
-	font-size: 15px;
-	text-transform:uppercase;
-	/*font-size: 30px;*/
-	line-height: 0px;
+	font-size: 29px;
+	line-height: 22px;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	letter-spacing:5px;
+	/*font-variant:small-caps;
+	text-transform: uppercase;*/
+	font-weight: 700;
+	letter-spacing: 0px;
 }
 
 .findings #reflections {
@@ -753,21 +761,22 @@ width: 100%;
 	font-size: 18px;
 } 
 .methods h3 {
-    text-align: center;
-	color: #43BBD0;
+text-align: center;
+	color: #2b9aad;
 	Padding-top: 20px;
-	font-size: 15px;
-	text-transform:uppercase;
-	/*font-size: 30px;*/
-	line-height: 0px;
+	font-size: 29px;
+	line-height: 22px;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 800;
-	letter-spacing:5px;
+	/*font-variant:small-caps;
+	text-transform: uppercase;*/
+	font-weight: 700;
+	letter-spacing: 0px;
 }
 .methods hr {
-border-top: 1px solid #909090;
-width: 180px;
-/*width: 85%;*/
+border-top: 1px solid #ebebeb;
+width: 220px;
+margin-top: 20px;
+margin-bottom: 50px;
 }
 .methods .container hr {
 border-top: 1px solid #909090;
@@ -797,22 +806,24 @@ font-family: 'Open Sans', sans-serif;
 
 /* explorer  */ 
 .startquote hr {
-border-top: 1px solid #909090;
-width: 50px;
+border-top: 1px solid #ebebeb;
+width: 450px;
+margin-top: 5px;
+margin-bottom: 50px;
 
 }
 .startquote h2 {
-    font-style:normal;
-    font-family: 'Open Sans', sans-serif;
-    text-align:center;
-    color: #2b9aad;
-    font-size: 22px;
-    font-weight:700;
-    line-height:26px;
+text-align: center;
+	color: #2b9aad;
+	font-size: 29px;
+	line-height: 22px;
+	font-family: 'Open Sans', sans-serif;
+	/*font-variant:small-caps;
+	text-transform: uppercase;*/
+	font-weight: 700;
+	letter-spacing: 0px;
     padding-top: 60px;
     padding-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
 
 }
 .startquote h4 {
@@ -841,6 +852,20 @@ font-family: 'Open Sans', sans-serif;
     line-height:20px;
     padding-top:35px;   
 }
+
+.exploratory h3 {
+text-align: center;
+	color: #2b9aad;
+	font-size: 18px;
+	line-height: 20px;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 4px;
+    padding-top: 60px;
+
+}
+
 .methods #download {
 -webkit-animation-duration: 0.7s;
 -webkit-animation-iteration-count: infinite;
