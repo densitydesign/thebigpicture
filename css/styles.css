@@ -1,5 +1,5 @@
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300,300italic,600,700,800,800italic);
 
 
 .icon-googleplus:before {
@@ -444,7 +444,7 @@ text-align: center;
 	line-height: 10px;
 	padding-top: 7px;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
+	font-weight: 800;
 	
 } 
 .sources p{
@@ -469,11 +469,28 @@ padding-bottom: 8px;
 	padding-top: 50px;
 }
 p.howto {
+
 	font-size: 12px;
 	line-height: 18px;
 	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
 	font-weight: 400;
 	padding-top: 0px;
+}
+
+.howto b{
+
+    font-weight: 800;
+}
+
+.keywords .container .howto h5{
+color: #404040;
+	font-size: 13px;
+	line-height: 19px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	padding-top: 0px;
+	letter-spacing: 0px;
 }
 
 .howto a:link{
@@ -547,6 +564,8 @@ a.collegamento:active{
     background-color: #Ffffff ;
 }
 
+
+
 .middle .container {
 	text-align:left;
 	padding-top:20px;
@@ -558,9 +577,9 @@ a.collegamento:active{
 #abstract p{
 	font-family: 'Open Sans', sans-serif;
 	color: #404040;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 27px;
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 31px;
 }
 
 .middle .container h4 {
@@ -673,6 +692,7 @@ margin-bottom: 50px;
 } 
 
 .findtext {
+	color: #606060;
 	font-size: 12px;
 	line-height: 20px;
 	padding-bottom: 15px;
@@ -745,6 +765,7 @@ width: 100%;
 }
 .methods .container p{
       font-size: 12px;
+      color: #505050;
 }
 .methods .container {
 	text-align:left;
