@@ -623,7 +623,7 @@ margin-bottom: 50px;
 	font-weight: 300;
     padding-top: 10px;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
    
 }
  #spaceexplo1, #spaceexplo2{
@@ -644,7 +644,7 @@ margin-bottom: 50px;
 border-top: 1px solid #ebebeb;
 width: 280px;
 margin-top: 20px;
-margin-bottom: 50px;
+margin-bottom: 30px;
 }
 .exploration h3 {
  text-align: center;
@@ -824,6 +824,17 @@ font-family: 'Open Sans', sans-serif;
     line-height:20px;
     padding-top:35px;   
 }
+.onlydesktop {
+	font-family: 'Open Sans', sans-serif;
+    text-align:center;
+    color: #A8A8A8 ;
+    font-size: 13px;
+    font-weight:300;
+    font-style: italic;
+    line-height:22px;
+    padding-bottom: 20px;
+
+}
 
 /* explorer  */ 
 .startquote hr {
@@ -831,7 +842,6 @@ border-top: 1px solid #ebebeb;
 width: 450px;
 margin-top: 5px;
 margin-bottom: 50px;
-
 }
 .startquote h2 {
 text-align: center;
@@ -903,7 +913,7 @@ margin-bottom: 40px;
 	padding-top: 20px;
 }
 .exploration #gotoexplo {
-	padding-bottom:30px;
+	padding-bottom:10px;
 }
 
 
