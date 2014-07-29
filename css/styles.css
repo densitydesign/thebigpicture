@@ -824,6 +824,12 @@ font-family: 'Open Sans', sans-serif;
     line-height:20px;
     padding-top:35px;   
 }
+
+.lastimg {
+    padding-bottom: 100px;
+}
+
+
 .onlydesktop {
 	font-family: 'Open Sans', sans-serif;
     text-align:center;
@@ -981,7 +987,7 @@ margin-bottom: 40px;
 } 
 
 #cmoda {
-     margin-left: 15px;
+     margin-left: 25px;
 } 
 
 
