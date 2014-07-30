@@ -102,6 +102,7 @@ img.center {
 }
 .top .navbar-brand {
 	font-family: 'Open Sans', sans-serif;
+	text-shadow: 2px 2px 10px #278c9d ;
 
     height: 50px;
     font-weight:700;
