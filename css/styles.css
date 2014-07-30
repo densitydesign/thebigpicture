@@ -22,6 +22,9 @@ h1, h2, h3, h4 {
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+  position: relative;
+}
 
 h1 {
     color: #43BBD0;
@@ -73,9 +76,16 @@ img.center {
 }
 .nav-justified li a:active {
 	color: #ffffff;
-	font-weight:700;
+	font-weight:400;
 		background: none; 
 }
+
+#myscrollspy .active a {
+	color: #ffffff;
+	font-weight:400;
+		background: none; 
+}
+
 .nav-justified li a:visited {
 	color: #ffffff;
 	font-weight:300;

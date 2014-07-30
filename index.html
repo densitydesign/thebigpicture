@@ -23,15 +23,15 @@
 
 
 </head>
-<body>
+<body  data-spy="scroll"  data-target="#myscrollspy" >
   <!-- Site header and navigation -->
   <header class="top" role="banner">
-    <div class="container">
+    <div class="container" >
       <a href="#home" class="navbar-brand pull-left smooth" >The Big Picture</a>
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="glyphicon glyphicon-align-justify"></span>
       </button>
-      <nav class="navbar-collapse collapse " role="navigation">
+      <nav class="navbar-collapse collapse " id="myscrollspy" role="navigation">
         <ul class="nav nav-justified ">
           <li><a class="smooth" href="#section1">Intro</a></li>
           <li><a class="smooth" href="#section2">Features</a></li>   
@@ -288,8 +288,8 @@
   <div class="col-md-12">
     <div class="container">
       <div class=" col-md-5"> 
-        <p class="intro">To give a qualitative dimension to the research has been developed a <b> hierarchical and non-univocal categorization </b> structured on two levels.</p>
-        <p>This allowed to track all the peculiarities of each image and identify the main thematic clusters. In order to get more refined results has been necessary to scan more than once all the images and refine the taxonomy until we ended up with around 100 sub-categories belonging to 7 main categories: </p>
+        <p class="intro">To give a qualitative dimension to the research has been developed a <b> hierarchical and non univocal categorization </b> structured on two levels.</p>
+        <p>This allowed to track all the peculiarities of each image and identify the main thematic clusters. In order to get more refined results has been necessary to scan more than once all the images and refine the taxonomy until we ended up with around 100 sub-categories belonging to 7 main categories. </p>
       </div>
       <div class="howto col-md-6 col-md-offset-1">
         <div>
@@ -380,7 +380,7 @@
     </div>
 
     <div class="col-md-4 col-centered"> 
-      <p class="onlydesktop" > In order to fully enjoy the exploration, due to the weight of the database,<br> we suggest to use the explorer with a desktop device.</p>
+      <p class="onlydesktop" > In order to fully enjoy the experience, due to the weight of the dataset,<br> we suggest to use the explorer with a desktop device.</p>
     </div>
     <div class="col-md-12 button col-centered" id="gotoexplo">
       <a class="smooth" href="explorer.html" target="_blank" >go to the explorer!</a>
@@ -405,12 +405,12 @@
   </div>	
   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
     <div class="intro col-lg-4 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1"> 
-      <p class="intro">The dataset is composed by 2400 images, composed by 900 images from a <b>local search engine</b>, and 300 images from five <b>local news-website</b> for each country. </p>
+      <p class="intro">The dataset is composed by 2400 images, composed by 900 images from a local <b>search engine</b>, and 300 images from five local <b> news website</b> for each country. </p>
     </div>
     <div class="howto col-lg-4 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
       <div>
         <h6 class="howto"> How to read </h6>
-        <p class="howto"> The visualization shows a comparison between the amount of images related to each <b>keyword</b> and to each <b>label</b> for all the sources. The label represent a further univocal categorization given to some of the images in order to grasp the specific "personality" of each source. </p>
+        <p class="howto"> The visualization shows a comparison between the amount of images related to each <b>keyword</b> (on the left) and to each <b>label</b> (on the right) for all the sources. The label represent a further univocal categorization given to some of the images in order to grasp the specific "personality" of each source. Click on the <span class="glyphicon glyphicon-new-window"></span> to look at the source website.</p>
       </div>
     </div>	
   </div>
@@ -598,6 +598,10 @@ artefacts gives them the role of tools for the user. <br> <br> <b>While an outsi
 
 
 <script>
+
+$('body').scrollspy({ target: "#myscrollspy", offset: 450 });
+
+
 
 $(document).ready(function(){
     $('#download').each(function() {
