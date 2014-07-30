@@ -84,6 +84,7 @@ img.center {
 	color: #ffffff;
 	font-weight:400;
 		background: none; 
+	text-shadow: 2px 2px 10px #278c9d ;
 }
 
 .nav-justified li a:visited {
