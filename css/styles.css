@@ -180,7 +180,7 @@ text-align: center;
 	font-weight:400;
 	font-size: 14px;
 	line-height: 15px;
-	text-transform:uppercase;
+	
 	text-align: center;
 
 }
@@ -225,10 +225,10 @@ font-family: 'Open Sans', sans-serif;
 font-weight: 400 ; 
 font-size: 14px;
 text-shadow: none;
-top:-15px;
+top:-5px;
 line-height: 20px;
-letter-spacing:2px;
-text-transform:uppercase;
+letter-spacing:0px;
+
 
 }
 
@@ -598,7 +598,7 @@ a.collegamento:visited{
 } 
 a.collegamento:hover{
 	color: #43BBD0;
-	 text-decoration: underline;
+	 text-decoration: none;
 } 
 a.collegamento:active{
 	 text-decoration: none;
@@ -887,11 +887,11 @@ font-family: 'Open Sans', sans-serif;
 .onlydesktop {
 	font-family: 'Open Sans', sans-serif;
     text-align:center;
-    color: #A8A8A8 ;
+    color: #c2c2c2 ;
     font-size: 13px;
     font-weight:300;
     font-style: italic;
-    line-height:22px;
+    line-height:20px;
     padding-bottom: 20px;
 
 }
@@ -1137,6 +1137,29 @@ color: #201D1E;
 
 }
 
+.methods .container .content a:link {
+	font-family: 'Open Sans', sans-serif;
+	
+	font-weight: 800;
+	color: #404040;	
+} 
+.methods .container .content a:visited {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	color: #404040;	
+} 
+.methods .container .content a:hover {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	color: #43BBD0;	
+	text-decoration: none;
+} 
+.methods .container .content a:active {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	color: #43BBD0;	
+	text-decoration: none;
+} 
 
 .quotes {
     padding-bottom:30px;
