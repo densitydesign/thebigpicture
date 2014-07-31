@@ -236,10 +236,10 @@ text-transform:uppercase;
   border: 1px;
 text-align: center;
 }
-.images .carousel-indicators .active {
-  background-color: #909090;
-}
+
 .images .carousel-control {
+	 position: absolute; 
+    top: 10%;
   color: #FFFFFF;
   opacity: 1;
   text-shadow: 0 0 0 rgba(0, 0, 0, 0);
@@ -255,18 +255,24 @@ text-align: center;
   opacity: 1; 
 
 }
-.images .carousel-control.right, .carousel-control.left :active {
- color: #43BBD0;
- opacity: 1; 
-}
 .images .carousel-control.left :hover {
- color: #43BBD0;
+ color: #1f707e;
  opacity: 1; 
 }
 .images .carousel-control.right :hover {
+ color: #1f707e;
+ opacity: 1; 
+}
+
+.images .carousel-control.left :active {
  color: #43BBD0;
  opacity: 1; 
 }
+.images .carousel-control.right :active{
+ color: #43BBD0;
+ opacity: 1; 
+}
+
 .images .carousel-control.right, .carousel-control.left :visited {
  color: #FFFFFF;
  opacity: 1; 
@@ -373,25 +379,19 @@ top: 75px;
   background-color: #909090;
 }
 .keywords .carousel-control {
+background-image:none;
   color: #909090;
   opacity: 1;
   text-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
-.keywords .carousel-control.right, .carousel-control.left {
-  background-image:none;
-  color: #909090;
-  opacity: 1; 
-}
-.keywords .carousel-control.right, .carousel-control.left :active {
- color: #404040;
- opacity: 1; 
-}
+
+
 .keywords .carousel-control.left :hover {
- color: #404040;
+ color: #1f707e;
  opacity: 1; 
 }
 .keywords .carousel-control.right :hover {
- color: #404040;
+ color: #1f707e;
  opacity: 1; 
 }
 .keywords .carousel-control.right, .carousel-control.left :visited {
