@@ -248,57 +248,58 @@ border-radius: 20px;
 font-size: 25px ;
 width: 24px;
 height: 24px;
-
+text-shadow: 2px 2px 10px #000000 ;
 
 }
 
 .images .carousel-control {
 	 position: absolute; 
     top: 52%;
-  color: #FFFFFF;
+  color: #e0e0e0;
+
 
   opacity: 1;
   text-shadow: 0 0 0 rgba(0, 0, 0, 0);
   }
 .images .carousel-control.right {
   background-image:none;
-  color: #FFFFFF;
+  color: #d6d6d6;
   opacity: 1; 
 
 
 }
 .images .carousel-control.left {
   background-image:none;
-  color: #FFFFFF;
+  color: #d6d6d6;
   opacity: 1; 
 
 }
 .images .carousel-control.left :hover {
-   color: #1f707e;
+   color: #FFFFFF;
  background: #43bbd0;
  opacity: 1; 
 }
 .images .carousel-control.right :hover {
-  color: #1f707e;
+  color: #FFFFFF;
  background: #43bbd0;
  opacity: 1; 
 }
 
 .images .carousel-control.left :active {
- 
    color: #43bbd0;
- background: #1f707e;
+ background: #278c9d;
  opacity: 1; 
+ 
 }
 .images .carousel-control.right :active{
-    color: #43bbd0;
- background: #1f707e;
+  color: #43bbd0;
+ background: #278c9d;
 
  opacity: 1; 
 }
 
 .images .carousel-control.right, .carousel-control.left :visited {
- color: #FFFFFF;
+ color: #d6d6d6;
  opacity: 1; 
 }
 
@@ -1005,6 +1006,7 @@ margin-bottom: 40px;
 	 text-decoration: none;
 	 background: #43BBD0;
 	 color: #ffffff;
+	/* box-shadow: 0px 1px 3px #278c9d ;*/
 }
 
 
