@@ -22,7 +22,7 @@
 
 
 </head>
-<body>
+<body  data-spy="scroll"  data-target="#myscrollspy" >
   <!-- Site header and navigation -->
   <header class="top" role="banner">
     <div class="container">
@@ -30,7 +30,7 @@
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="glyphicon glyphicon-align-justify"></span>
       </button>
-      <nav class="navbar-collapse collapse " role="navigation">
+      <nav class="navbar-collapse collapse " id="myscrollspy" role="navigation">
         <ul class="nav nav-justified ">
           <li><a class="smooth" href="#section9">intro</a></li>
           <li><a class="smooth" href="#spaceexplo1">China</a></li>   
@@ -222,6 +222,8 @@
 
 
 <script>
+
+$('body').scrollspy({ target: "#myscrollspy", offset: 450 });
 
 $(document).ready(function(){
     $('#download').each(function() {
