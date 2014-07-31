@@ -25,7 +25,8 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
         col = false,
         loaded = false,
         loading = false,
-        rows;
+        rows,
+        allsel=true;
 
 
 //console.log(vizContainer)
@@ -407,7 +408,10 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                 .attr("dy", "1.3em")
                 .style("fill", "#222222")
                 .text(function (d) {
-                    return d.key
+
+                    if(d.key.length*10> d.h) return d.key.substr(0,parseInt(d.h/12))+"…";
+                    else return d.key
+                    //return d.key
                 })
 
             txt.transition().duration(500)
