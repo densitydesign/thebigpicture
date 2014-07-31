@@ -10,6 +10,7 @@
   <link href="css/styles.css" rel="stylesheet">
   <link href="assets/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/elastic.css">
 
 
@@ -22,7 +23,7 @@
 
 
 </head>
-<body>
+<body  data-spy="scroll"  data-target="#myscrollspy" >
   <!-- Site header and navigation -->
   <header class="top" role="banner">
     <div class="container">
@@ -30,7 +31,7 @@
       <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="glyphicon glyphicon-align-justify"></span>
       </button>
-      <nav class="navbar-collapse collapse " role="navigation">
+      <nav class="navbar-collapse collapse " id="myscrollspy" role="navigation">
         <ul class="nav nav-justified ">
           <li><a class="smooth" href="#section9">intro</a></li>
           <li><a class="smooth" href="#spaceexplo1">China</a></li>   
@@ -196,7 +197,7 @@
     </div>
     <div class="col-md-4">
       <h5>Share</h5>
-      <p>
+       <p>
             <a class="share" target="_blank" href="https://twitter.com/intent/tweet?&text=The%20Big%20Picture%20•%20a%20visual%20exploration%20of%20the%20reciprocal%20image%20of%20Italy%20and%20China%20observed%20through%20digital%20methods%20•%20www.thebigpictu.re"><span class="fa fa-twitter"></span></a>
             
             <a class="share" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=www.thebigpictu.re"><span class="fa fa-facebook"></span></a>
@@ -204,8 +205,9 @@
             <a class="share" target="_blank" href="https://plus.google.com/share?url=www.thebigpictu.re"><i class="fa fa-google-plus "></i></a>
             
             <a class="share" target="_blank" href="http://www.addtoany.com/add_to/sina_weibo?linkurl=www.thebigpictu.re&linkname=The Big Picture, a visual exploration of the reciprocal image of Italy and China observed through digital methods"><i class="fa fa-weibo"></i></a>
-
-                        </p>
+            
+            <a class="share" href="mailto:giuliofagiolini@gmail.com?subject=The Big Picture"><i class="fa fa-envelope"></i></a>
+ </p>
     </div>
   </div>
 </div>
@@ -222,6 +224,8 @@
 
 
 <script>
+
+$('body').scrollspy({ target: "#myscrollspy", offset: 300 });
 
 $(document).ready(function(){
     $('#download').each(function() {
