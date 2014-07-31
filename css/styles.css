@@ -62,7 +62,7 @@ img.center {
 /*da modificare per font menù*/
 .nav-justified li a {
 	letter-spacing: 1px;
-    color: #c1e8ef;
+    color: #a1dde8;
     	font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 0.85em;
@@ -92,29 +92,34 @@ img.center {
 	font-weight:300;
 	background: none; 
 }
+
+/* navbarshadow*/
 .top {
-    background-color: #43BBD0;
+    background-color: #2fa8bd;
     font-family: 'Open Sans', sans-serif;
     left: 0;
     position: fixed;
     right: 0;
     z-index: 1030;
+
+
+
 }
 .top .navbar-brand {
 	font-family: 'Open Sans', sans-serif;
 	text-shadow: 2px 2px 10px #278c9d ;
-
     height: 50px;
     font-weight:700;
     line-height: 50px;
     text-align: center;
     padding: 0 10px;
-    background-color: #43BBD0;
+    background-color: none;
     color: #FFFFFF;
     text-decoration: none;
 }
 .top .container {
     padding: 0;
+
 }
 .banner {
     background-color: #FFFFFF;
