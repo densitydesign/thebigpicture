@@ -868,6 +868,11 @@ width: 100%;
     font-style: italic;
     line-height:47px;
 }
+
+.methods .container .lastimg hr {
+margin-bottom: 30px;
+}
+
 /* didascalia */ 
 .methods .container .col-md-8 h6 {
 font-family: 'Open Sans', sans-serif;
