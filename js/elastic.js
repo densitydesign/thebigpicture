@@ -653,12 +653,12 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
     function checkAllSel() {
 
         console.log("check")
-        if($(".lang.sel").length==0) {
+        if($(fullCont+" .lang.sel").length==0) {
             d3.selectAll(".lang").classed("sel",true)
             allLangSel=true;
         }
 
-        if($(".tag.sel").length==0) {
+        if($(fullCont+ ".tag.sel").length==0) {
              d3.selectAll(".tag").classed("sel",true)
             allTagSel=true;
         }
