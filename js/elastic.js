@@ -442,16 +442,43 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                 .attr("dy", "1.3em")
                 .style("fill", "#222222")
                 .text(function (d) {
+                    console.log(d);
 
-                    if(d.key.length*8> d.h && d.h>=30) return d.key.substr(0,parseInt(d.h/12))+"…";
-                    else if(d.key.length*8< d.h) return d.key
-                    else if(d.h<30) return d.key.substr(0,1)+"…";
+                    if(d.key.length*10> d.h && d.h>=40) {
+                        return d.key.substr(0,parseInt(d.h/12))+"…";
+                        console.log("1")
+                    }
+                    else if(d.key.length*10< d.h && d.h>=40) {
+                        return d.key;
+                        console.log("2")
+                    }
+                    else if(d.h<40) {
+                        return d.key.substr(0,1)+"…";
+                        console.log("3")
                     //return d.key
+                }
                 })
 
             txt.transition().duration(500)
                 .attr("x", function (e) {
                     return e.y
+                })
+                 .text(function (d) {
+                    console.log(d);
+
+                    if(d.key.length*10> d.h && d.h>=60) {
+                        return d.key.substr(0,parseInt(d.h/12))+"…";
+                        console.log("1")
+                    }
+                    else if(d.key.length*10< d.h && d.h>=60) {
+                        return d.key;
+                        console.log("2")
+                    }
+                    else if(d.h<60) {
+                        return d.key.substr(0,1)+"…";
+                        console.log("3")
+                    //return d.key
+                }
                 })
 
             txt.exit().remove()
