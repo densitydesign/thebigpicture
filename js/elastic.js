@@ -3,7 +3,7 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
     var col = true,
         rows,
         siz = 12,
-        data,
+        ndata,
         load = 0,
         count = 0,
         currArray,
@@ -26,7 +26,8 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
         loaded = false,
         loading = false,
         rows,
-        allsel=true;
+        allLangSel=false;
+        allTagSel=false;
 
 
 //console.log(vizContainer)
@@ -49,7 +50,7 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
 
         preloadImages(imgarr, im, init)
 
-
+        //init();
         checkOpacity = setInterval(callImage, 500);
     })
 
@@ -61,7 +62,7 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
             $(fullCont + '.googleimages').css("opacity", 1)
         });
 
-        data = d3.nest()
+        ndata = d3.nest()
             .key(function (d) {
                 return d.lang;
             })
@@ -70,27 +71,32 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
             })
             .entries(rows);
 
-        data.forEach(function (e, i) {
-            allLangs.push(e.key);
+        ndata.forEach(function (d, i) {
+            allLangs.push(d.key);
+            d.count = 0;
+            d['values'].forEach(function(e,j){
+                d.count+=e['values'].length
+            })
+        })
+
+
+        ndata.sort(function(a,b){
+            return b.count-a.count;
         })
 
         var maxH = 0
 
-        data.forEach(function (d, i) {
-            d.count = 0;
+
+        ndata.forEach(function (d, i) {
             d.y = maxH
             d['values'].forEach(function (e, j) {
                 maxH += e['values'].length
-                d.count += e['values'].length
-
             });
         });
 
-        data.sort(function (a, b) {
-            return b.count - a.count
-        })
 
 
+       
         var margin = {top: 2, right: 10, bottom: 5, left: 10},
             width = ($(cont).width()) * 0.75,
             totwidth = ($(cont).width()) * 0.8
@@ -190,12 +196,17 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
 
         function viz_googleimages() {
 
+
+           tip = d3.tip().attr('class', 'd3-tip').html(function(d) { return d.key; });
+           svg.call(tip)
+
+
             //scale function
             langScale = d3.scale.linear().domain([0, maxH]);
             langScale.range([0, width])
 
             //draw lang rects
-            langs = svg.selectAll(".lang").data(data)
+            langs = svg.selectAll(".lang").data(ndata)
                 .enter()
                 .append("rect")
                 .attr("class", function (d) {
@@ -218,7 +229,6 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                     if (!d3.select(this).classed("sel")) {
                         d.sel = true;
                         d3.select(this).classed("sel", true);
-
                         var index = langsArr.indexOf(d.key);
                         if (index == -1) {
                             langsArr.push(d.key);
@@ -228,17 +238,26 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                         loadImages();
                     }
                     else {
-                        d.sel = false;
-                        d3.select(this).classed("sel", false)
-                        var index = langsArr.indexOf(d.key);
-                        if (index > -1) {
-                            langsArr.splice(index, 1);
-                        }
-                        if (!langsArr.length) {
-                            /*	tagsArr=[];
-                             $(".tag.sel").removeClass("sel")
-                             loadWhole(); */
 
+                        if(allLangSel) {
+                            d3.selectAll(".lang").classed("sel",false)
+                            allLangSel=false;
+                             d3.select(this).classed("sel", true);
+                            langsArr.push(d.key);
+                        }
+
+                        else {
+                            d.sel = false;
+                            d3.select(this).classed("sel", false)
+                            var index = langsArr.indexOf(d.key);
+                            if (index > -1) {
+                                langsArr.splice(index, 1);
+                            }
+                            if (!langsArr.length) {
+                             
+                                checkAllSel();
+
+                            }
                         }
                         //	else{
                         elastify();
@@ -246,11 +265,13 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                         //	}
                     }
 
-                });
+                })
+                .on('mouseover', tip.show)
+                .on('mouseout', tip.hide)
 
             //labels for languages
             svg.selectAll(".lang-txt")
-                .data(data)
+                .data(ndata)
                 .enter()
                 .append("text")
                 .attr("class", "lang-txt")
@@ -346,7 +367,7 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                 .style("stroke", "#fff")
                 .on("click", function (d) {
                     if (!d3.select(this).classed("sel")) {
-                        console.log("select")
+
                         d.sel = true;
                         var index = tagsArr.indexOf(d.key);
                         if (index == -1) {
@@ -356,18 +377,31 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                         loadImages();
                     }
                     else {
-                        console.log("deselect")
-                        d.sel = false;
-                        d3.select(this).classed("sel", false)
-                        var index = tagsArr.indexOf(d.key);
-                        // console.log(index)
-                        if (index > -1) {
-                            tagsArr.splice(index, 1);
+                        if(allTagSel) {
+                        
+                            d3.selectAll(".tag").classed("sel",false)
+                            allTagSel=false;
+                             d3.select(this).classed("sel", true);
+                            tagsArr.push(d.key);
+                        
+                        }
+                        else {                           
+                            d.sel = false;
+                            d3.select(this).classed("sel", false)
+                            var index = tagsArr.indexOf(d.key);
+                            // console.log(index)
+                            if (index > -1) {
+                                tagsArr.splice(index, 1);
+                            }
+                            checkAllSel();
+
                         }
                         loadImages();
                     }
 
-                });
+                })
+                .on('mouseover', tip.show)
+                .on('mouseout', tip.hide);
 
             //transition on existing
             tags.transition().duration(500)
@@ -404,13 +438,14 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                 .attr("x", function (e) {
                     return e.y
                 })
-                .attr("dx", "0")
+                .attr("dx", "3")
                 .attr("dy", "1.3em")
                 .style("fill", "#222222")
                 .text(function (d) {
 
-                    if(d.key.length*10> d.h) return d.key.substr(0,parseInt(d.h/12))+"…";
-                    else return d.key
+                    if(d.key.length*8> d.h) return d.key.substr(0,parseInt(d.h/12))+"…";
+                    else if(d.key.length*8< d.h) return d.key
+                    else if(d.h<30) return d.key.substr(0,1)+"…";
                     //return d.key
                 })
 
@@ -551,7 +586,18 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
 
         });
 
+
+
+
+
+        //LAUNCH MAIN METHOD
+
         viz_googleimages();
+        checkAllSel();
+
+
+
+
 
 
         $(fullCont + " .rem-langs").on("click", function () {
@@ -602,6 +648,22 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
             .delay(300)
             .style("opacity", 1);
     }
+
+
+    function checkAllSel() {
+
+        console.log("check")
+        if($(".lang.sel").length==0) {
+            d3.selectAll(".lang").classed("sel",true)
+            allLangSel=true;
+        }
+
+        if($(".tag.sel").length==0) {
+             d3.selectAll(".tag").classed("sel",true)
+            allTagSel=true;
+        }
+    }
+
 
 
     function preloadImages(srcs, imgs, callback) {
