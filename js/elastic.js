@@ -240,7 +240,7 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                     else {
 
                         if(allLangSel) {
-                            d3.selectAll(".lang").classed("sel",false)
+                            d3.selectAll(fullCont+" .lang").classed("sel",false)
                             allLangSel=false;
                              d3.select(this).classed("sel", true);
                             langsArr.push(d.key);
@@ -379,7 +379,7 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                     else {
                         if(allTagSel) {
                         
-                            d3.selectAll(".tag").classed("sel",false)
+                            d3.selectAll(fullCont+" .tag").classed("sel",false)
                             allTagSel=false;
                              d3.select(this).classed("sel", true);
                             tagsArr.push(d.key);
