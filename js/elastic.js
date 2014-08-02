@@ -443,7 +443,7 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
                 .style("fill", "#222222")
                 .text(function (d) {
 
-                    if(d.key.length*8> d.h) return d.key.substr(0,parseInt(d.h/12))+"…";
+                    if(d.key.length*8> d.h && d.h>=30) return d.key.substr(0,parseInt(d.h/12))+"…";
                     else if(d.key.length*8< d.h) return d.key
                     else if(d.h<30) return d.key.substr(0,1)+"…";
                     //return d.key
@@ -658,7 +658,7 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
             allLangSel=true;
         }
 
-        if($(fullCont+ ".tag.sel").length==0) {
+        if($(fullCont+ " .tag.sel").length==0) {
              d3.selectAll(fullCont+" .tag").classed("sel",true)
             allTagSel=true;
         }
