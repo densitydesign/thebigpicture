@@ -654,12 +654,12 @@ function elastic(fullCont,vizCont, imgFolder, imgFile) {
 
         console.log("check")
         if($(fullCont+" .lang.sel").length==0) {
-            d3.selectAll(".lang").classed("sel",true)
+            d3.selectAll(fullCont+" .lang").classed("sel",true)
             allLangSel=true;
         }
 
         if($(fullCont+ ".tag.sel").length==0) {
-             d3.selectAll(".tag").classed("sel",true)
+             d3.selectAll(fullCont+" .tag").classed("sel",true)
             allTagSel=true;
         }
     }
